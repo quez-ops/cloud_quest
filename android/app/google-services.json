@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47870117885",
+    "project_id": "inclass13-auth-64e6b",
+    "storage_bucket": "inclass13-auth-64e6b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47870117885:android:135da6b888f1b49d5e3b94",
+        "android_client_info": {
+          "package_name": "com.example.cloud_quest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMEs99Iv6PFnMRjiDfEZM5D0P-h1QgENo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

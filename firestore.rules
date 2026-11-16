@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Shared daily challenge: readable by any signed-in user, read-only on client
+    match /challenges/{challengeId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+
+    // Private learner progress: owner-read only; writes restricted to Admin SDK backend
+    match /users/{userId}/progress/{progressId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow write: if false;
+    }
+
+    match /users/{userId}/devices/{deviceId} {
+      allow read, write: if false;
+    }
+  }
+}
